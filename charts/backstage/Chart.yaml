@@ -8,6 +8,7 @@ annotations:
       url: https://github.com/seowjin1060/flux-test
     - name: Default Image Source
       url: https://github.com/shinhancard/dev-portal
+      
 apiVersion: v2
 description: A Helm chart for deploying a Backstage application
 dependencies:
@@ -16,10 +17,7 @@ dependencies:
     tags:
       - bitnami-common
     version: 2.x.x
-  - condition: postgresql.enabled
-    name: postgresql
-    repository: https://charts.bitnami.com/bitnami
-    version: 12.x.x
+
 home: https://github.com/shinhancard/dev-portal
 keywords:
   - backstage

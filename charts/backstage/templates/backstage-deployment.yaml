@@ -123,19 +123,6 @@ spec:
           env:
             - name: APP_CONFIG_backend_listen_port
               value: {{ .Values.backstage.containerPorts.backend | quote }}
-            {{- if .Values.postgresql.enabled }}
-            - name: POSTGRES_HOST
-              value: {{ include "backstage.postgresql.host" . }}
-            - name: POSTGRES_PORT
-              value: "5432"
-            - name: POSTGRES_USER
-              value: {{ .Values.postgresql.auth.username }}
-            - name: POSTGRES_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: {{ include "backstage.postgresql.databaseSecretName" . }}
-                  key: {{ include "backstage.postgresql.databaseSecretKey" . }}
-            {{- end }}
             {{- if .Values.backstage.extraEnvVars }}
             {{- include "common.tplvalues.render" ( dict "value" .Values.backstage.extraEnvVars "context" $) | nindent 12 }}
             {{- end }}
