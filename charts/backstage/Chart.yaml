@@ -1,0 +1,41 @@
+annotations:
+  artifacthub.io/category: integration-delivery
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/links: |
+    - name: support
+      url: https://github.com/shinhancard/dev-portal
+    - name: Chart Source
+      url: https://github.com/seowjin1060/flux-test
+    - name: Default Image Source
+      url: https://github.com/shinhancard/dev-portal
+apiVersion: v2
+description: A Helm chart for deploying a Backstage application
+dependencies:
+  - name: common
+    repository: https://charts.bitnami.com/bitnami
+    tags:
+      - bitnami-common
+    version: 2.x.x
+  - condition: postgresql.enabled
+    name: postgresql
+    repository: https://charts.bitnami.com/bitnami
+    version: 12.x.x
+home: https://github.com/shinhancard/dev-portal
+keywords:
+  - backstage
+  - Devportal
+kubeVersion: ">= 1.19.0-0"
+maintainers:
+  - name: Backstage
+    url: https://github.com/shinhancard/dev-portal
+name: backstage
+type: application
+sources:
+- https://github.com/seowjin1060/flux-test
+- https://github.com/shinhancard/dev-portal
+name: backstage
+
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+# Versions are expected to follow Semantic Versioning (https://semver.org/)
+version: 1.2.0
