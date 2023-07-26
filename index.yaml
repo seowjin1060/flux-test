@@ -11,8 +11,9 @@ entries:
           url: https://github.com/seowjin1060/flux-test
         - name: Default Image Source
           url: https://github.com/shinhancard/dev-portal
+      fluxcd.io/automated: "true"
     apiVersion: v2
-    created: "2023-07-26T08:50:29.87331+09:00"
+    created: "2023-07-26T14:59:05.866784+09:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -20,7 +21,7 @@ entries:
       - bitnami-common
       version: 2.x.x
     description: A Helm chart for deploying a Backstage application
-    digest: e513157decffff896d390ade1510c825bc26bb94f8c02b2a0d71cc46f7c02bea
+    digest: af762cac29bbd457f1ffe5552911b4639a64681df633016a2038b89582105992
     home: https://github.com/shinhancard/dev-portal
     keywords:
     - backstage
@@ -35,34 +36,6 @@ entries:
     - https://github.com/shinhancard/dev-portal
     type: application
     urls:
-    - backstage-1.2.0.tgz
+    - https://seowjin1060.github.io/flux-test/charts/backstage-1.2.0.tgz
     version: 1.2.0
-  common:
-  - annotations:
-      category: Infrastructure
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 2.6.0
-    created: "2023-07-26T08:50:29.87403+09:00"
-    description: A Library Helm Chart for grouping common logic between bitnami charts.
-      This chart is not deployable by itself.
-    digest: 64fb3a16f648a52e9923759571452836b0906dedfd6e65e4949e3bdd7bddfbdc
-    home: https://bitnami.com
-    icon: https://bitnami.com/downloads/logos/bitnami-mark.png
-    keywords:
-    - common
-    - helper
-    - template
-    - function
-    - bitnami
-    maintainers:
-    - name: VMware, Inc.
-      url: https://github.com/bitnami/charts
-    name: common
-    sources:
-    - https://github.com/bitnami/charts
-    type: library
-    urls:
-    - charts/common-2.6.0.tgz
-    version: 2.6.0
-generated: "2023-07-26T08:50:29.871207+09:00"
+generated: "2023-07-26T14:59:05.862848+09:00"

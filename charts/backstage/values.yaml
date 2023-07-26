@@ -76,6 +76,38 @@ ingress:
     # -- The name to which the TLS Secret will be called
     secretName: ""
 
+postgresql:
+
+  # -- Switch to enable or disable the PostgreSQL helm chart
+  enabled: false
+
+  # -- The authentication details of the Postgres database
+  auth:
+
+    # -- Name for a custom user to create
+    username: backstage
+
+    # -- Password for the custom user to create
+    password: 
+
+    # -- Name of existing secret to use for PostgreSQL credentials
+    existingSecret: ""
+
+    # -- The secret keys Postgres will look for to retrieve the relevant password
+    secretKeys:
+
+      # -- The key in which Postgres will look for, for the admin password, in the existing Secret
+      adminPasswordKey: admin-password
+
+      # -- The key in which Postgres will look for, for the user password, in the existing Secret
+      userPasswordKey: user-password
+
+      # -- The key in which Postgres will look for, for the replication password, in the existing Secret
+      replicationPasswordKey: replication-password
+
+  # -- PostgreSQL architecture (`standalone` or `replication`)
+  architecture: standalone
+
 # -- Backstage parameters
 # @default -- See below
 backstage:
@@ -92,10 +124,10 @@ backstage:
   image:
 
     # -- Backstage image registry
-    registry: ghcr.io
+    registry: 602200075182.dkr.ecr.ap-northeast-2.amazonaws.com/
 
     # -- Backstage image repository
-    repository: backstage/backstage
+    repository: swa-ecr
 
     # -- Backstage image tag (immutable tags are recommended)
     tag: latest

@@ -8,7 +8,8 @@ annotations:
       url: https://github.com/seowjin1060/flux-test
     - name: Default Image Source
       url: https://github.com/shinhancard/dev-portal
-      
+  fluxcd.io/automated: "true"
+
 apiVersion: v2
 description: A Helm chart for deploying a Backstage application
 dependencies:
