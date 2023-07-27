@@ -124,7 +124,7 @@ backstage:
   image:
 
     # -- Backstage image registry
-    registry: 602200075182.dkr.ecr.ap-northeast-2.amazonaws.com/
+    registry: 602200075182.dkr.ecr.ap-northeast-2.amazonaws.com
 
     # -- Backstage image repository
     repository: swa-ecr
