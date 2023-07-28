@@ -130,7 +130,7 @@ backstage:
     repository: swa-ecr
 
     # -- Backstage image tag (immutable tags are recommended)
-    tag: latest
+    tag: backstage_de293948d6645d5ba6e1e87835e3dc13ea28fd7c
 
     # -- Specify a imagePullPolicy.
     # Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
