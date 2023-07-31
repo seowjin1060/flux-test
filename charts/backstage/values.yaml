@@ -124,13 +124,13 @@ backstage:
   image:
 
     # -- Backstage image registry
-    registry: 602200075182.dkr.ecr.ap-northeast-2.amazonaws.com
+    registry: seowjin
 
     # -- Backstage image repository
-    repository: swa-ecr
+    repository: backstage
 
     # -- Backstage image tag (immutable tags are recommended)
-    tag: backstage_de293948d6645d5ba6e1e87835e3dc13ea28fd7c
+    tag: latest
 
     # -- Specify a imagePullPolicy.
     # Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
