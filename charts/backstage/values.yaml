@@ -124,10 +124,11 @@ backstage:
   image:
 
     # -- Backstage image registry
-    registry: 602200075182.dkr.ecr.ap-northeast-2.amazonaws.com
+
+    registry: seowjin
 
     # -- Backstage image repository
-    repository: swa-ecr
+    repository: backstage
 
     # -- Backstage image tag (immutable tags are recommended)
     tag: latest

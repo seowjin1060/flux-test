@@ -36,6 +36,6 @@ entries:
     - https://github.com/shinhancard/dev-portal
     type: application
     urls:
-    - https://seowjin1060.github.io/flux-test/charts/backstage-1.2.0.tgz
+    - https://seowjin1060.github.io/flux-test/backstage-1.2.0.tgz
     version: 1.2.0
 generated: "2023-07-26T14:59:05.862848+09:00"
