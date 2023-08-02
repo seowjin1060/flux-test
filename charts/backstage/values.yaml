@@ -124,6 +124,7 @@ backstage:
   image:
 
     # -- Backstage image registry
+
     registry: seowjin
 
     # -- Backstage image repository
